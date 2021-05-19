@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #d4d7de;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 15%;
+}
+.logo{
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.nav-item{
+    text-align: right;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+a{
+    margin: 15px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #000000;
+}
+
+
+/*加载图片到二级菜单*/
+.indian{
+    background:url(http://www.indianmotorcycle.cn/images/logo.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.harley{
+    background:url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=592861646,3154560168&fm=26&gp=0.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ktm {
+    background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180613%2F09343fc36e9a43049547868d03c7a40f.png&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612532447&t=f49ff718fb821a1d45182738f76f806a);
+    background-size:100% 100%;
+}
+
+.bmw {
+    background:url(https://www.bmw.com.cn/etc/clientlibs/digitals2/clientlib/media/img/BMW_White_Logo.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ducati {
+    background:url(https://assets.ducati.com/dist/0.1.6/assets/img/ducati_id.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aprilia {
+    background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.58cdn.com.cn%2Fzhuanzh%2Fn_v29f94b3ec55df4a75bbf9acd701fa77ef.jpg%3Fw%3D750%26h%3D0&refer=http%3A%2F%2Fpic2.58cdn.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612532206&t=a0ca3588d74afbe90e52ad2c8863cab6);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.triumph{
+    background:url(http://www.777moto.com/wp-content/uploads/2015/04/triumph_logo.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vespa{
+    background:url(https://wlassets.vespa.com/wlassets/vespa/master/logo/Vespa/original/Vespa.png?1592235669985);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.honda{
+    background:url(https://pic.rmb.bdstatic.com/0e7c5b3ec3fdf767702f59233a5b4383.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kawasaki{
+    background:url(http://www.kawasaki-motors.cn/Content/Images/kawasaki-logo-global.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.suzuki{
+    background:url(https://www.globalsuzuki.com/motorcycle/img/logo.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.yamaha{
+    background:url(https://www.yamaha-motor.com.cn/sharedhp/img/rwd_identity.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.longxin{
+    background:url(https://www.loncinindustries.com/mobile/images/logo.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.chunfeng{
+    background:url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=94385197,3093911095&fm=26&gp=0.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.haojue{
+    background:url(https://www.haojue.com/bocweb//web/img/logo.png?v=v14);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.lifan{
+    background:url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=694157445,1608882500&fm=26&gp=0.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.fonz{
+    background:url(https://assets-global.website-files.com/5d23f1c570f33476f4a23d3d/6018aeb09bd8f616f35ddaa3_FONZ%20logo%20horizontal.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.aaa{
+    position: fixed;
+}
+
+.aaa ul { /*一级菜单样式*/
+    list-style-type: none;
+    height: 70px;
+    margin: 70px;
+    width: 100%;
+    overflow: hidden;
+    background-color:white;
+}
+
+.aaa li{ /*一级菜单向左浮动*/
+    float: left;
+}
+
+.aaa li a, .dropbtn { /*一级菜单字体*/
+    display:inline-block;
+    color: black;
+    text-align:left;
+    padding: 8px 28px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.aaa .dropdown { /*二级菜单转为块元素*/
+    display:inline-block;
+}
+
+.aaa .dropdown-content { /*二级菜单内容样式*/
+    top: 140px;
+    display:none;
+    position: absolute;
+    background-color:white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.aaa .dropdown-content a { /*二级菜单a链接样式*/
+    top: 20px;
+    margin-top:0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    height: 18px;
+}
+
+.aaa .dropdown-content a:hover { /*鼠标指向二级菜单效果颜色*/
+    background-color: #f1f1f1;
+}
+
+.aaa .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#section {
+    width:350px;
+    height:500px;
+    float:left;
+    padding:10px; 
+}
+
+#footer { /*页尾*/
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:0px; 
+    height: 30px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
