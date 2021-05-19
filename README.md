@@ -8,3 +8,10 @@ Brand.html<br>
 Travel.html<br>
 
 #css part
+<br>
+style.css
+
+#javascript part
+<br>
+imgbox.js
+search.js
