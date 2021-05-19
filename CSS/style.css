@@ -1,0 +1,458 @@
+/*Test-style-begin*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center; /*主轴上项目位于容器中央*/
+    align-items: center;
+    flex-direction: row;    /*主轴为水平方向，起点在左端*/
+    flex-wrap: wrap;    /*换行，第一行在上方*/
+    background-color: #d4d7de;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item{
+    text-align: right;
+    padding-left: 18px;
+    padding-right: 4px;
+}
+
+.nav-item a{
+    margin: 0;
+}
+
+.logo{
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: "RHINO___";
+}
+
+a{
+    margin: 15px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: #000000;
+}
+
+.banner-area{
+    position: relative;
+    background-image: url(../image/2019-imc-vintage-willowgreenivorycream-riding-db-0146_ss.jpg); /*要写相对路径！！*/
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.travel-area, .about-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;    /*换行，第一行在上方*/
+    flex-direction: row;    /*主轴为水平方向，起点在左端*/
+    width: 100%;
+    height: 880px;
+}
+
+.text-part{
+    width: 65%;
+    height: 85%;
+}
+
+@font-face{
+    font-family: "ALBED___";
+    src:url(../font/ALBED___.TTF);
+}
+
+@font-face{
+    font-family: "BEDBUG__";
+    src:url(../font/BEDBUG__.TTF);
+}
+
+@font-face{
+    font-family: "Electrotome\ Bold\ Oblique";
+    src:url(../font/SF\ Electrotome\ Bold\ Oblique.ttf);
+}
+
+@font-face{
+    font-family: "RHINO___";
+    src:url(../font/RHINO___.TTF);
+}
+
+
+h1{
+    font-size: 50px;
+    font-family:"ALBED___";
+}
+
+h2{
+    position:absolute;
+    font-size: 100px;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight:bold;
+    font-family: "Electrotome\ Bold\ Oblique";
+}
+
+h3{
+    bottom:5%;
+    position: absolute;/*绝对位置*/
+    font-size: 30px;
+    line-height: 50px;
+    z-index: 1;/*置于上层*/
+    font-weight: 900;/*字体加粗*/
+    font-family: "Electrotome\ Bold\ Oblique";
+}
+
+p{
+    position: absolute;/*绝对位置*/
+    font-size: 24px;
+    line-height: 50px;
+    z-index: 1;/*置于上层*/
+}
+
+.travel-area{
+    background: #302f2f;
+    color: #fff;
+}
+
+.about-img{
+    position: relative;/*相对位置*/
+    width: 105%;
+    opacity: 0.5;/*透明度*/
+    z-index: -1;/*置于下层*/
+}
+
+.travel-area .container{
+    display: flex;
+    width: 100%;
+    padding: 2% 1%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.travel-area .box{
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,0,1);
+    line-height: 0;
+}
+
+.travel-area .box > img{
+    width: 250%;
+    height: calc(100%-10vh); /*当前窗口高度减10vh（即10%的可视窗口）*/
+    object-fit: cover;/*被替换的内容在保持其宽高比的同时填充元素的整个内容框(多余剪切掉)*/
+    transition: 0.5s;/*过渡效果需要0.5s完成*/
+    -webkit-transition: 0.5s;/*Safari*/
+}
+
+.travel-area .box > span{
+    font-size: 2.3vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.5;
+    font-family: "BEDBUG__";
+    columns: #333333;
+    text-transform: uppercase;
+}
+
+.travel-area .box:hover{
+    flex: 1 1 60%;
+}
+
+.travel-area .box:hover > img{
+    width: 100%;
+    height: 60%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    width: 11%;
+    height: 65%;
+    margin:0 auto;
+    background-color:#302f2f;
+    color:white;
+    border: 2px solid #555555;
+}
+
+.button1:hover {
+    margin:0 auto;
+    background-color: #555555;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth; /*滑动样式*/
+}
+
+/*Test-style-end*/
+
+/*WebTest-imgbox-begin*/
+
+/*图片轮播样式*/
+.imgBox{
+    padding-top: 150px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imgBox img{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: auto;
+    overflow: hidden;
+}
+
+.img1{
+    display: block;
+}
+
+.img2{
+    display: none;
+}
+
+.img3{
+    display: none;
+}
+
+.img4{
+    display: none;
+}
+
+/*WebTest-imgbox-end*/
+
+/*WebTest-style*/
+
+/*加载图片到二级菜单*/
+.indian{
+    background:url(http://www.indianmotorcycle.cn/images/logo.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.harley{
+    background:url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=592861646,3154560168&fm=26&gp=0.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ktm {
+    background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180613%2F09343fc36e9a43049547868d03c7a40f.png&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612532447&t=f49ff718fb821a1d45182738f76f806a);
+    background-size:100% 100%;
+}
+
+.bmw {
+    background:url(https://www.bmw.com.cn/etc/clientlibs/digitals2/clientlib/media/img/BMW_White_Logo.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ducati {
+    background:url(https://assets.ducati.com/dist/0.1.6/assets/img/ducati_id.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aprilia {
+    background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.58cdn.com.cn%2Fzhuanzh%2Fn_v29f94b3ec55df4a75bbf9acd701fa77ef.jpg%3Fw%3D750%26h%3D0&refer=http%3A%2F%2Fpic2.58cdn.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612532206&t=a0ca3588d74afbe90e52ad2c8863cab6);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.triumph{
+    background:url(http://www.777moto.com/wp-content/uploads/2015/04/triumph_logo.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vespa{
+    background:url(https://wlassets.vespa.com/wlassets/vespa/master/logo/Vespa/original/Vespa.png?1592235669985);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.honda{
+    background:url(https://pic.rmb.bdstatic.com/0e7c5b3ec3fdf767702f59233a5b4383.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kawasaki{
+    background:url(http://www.kawasaki-motors.cn/Content/Images/kawasaki-logo-global.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.suzuki{
+    background:url(https://www.globalsuzuki.com/motorcycle/img/logo.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.yamaha{
+    background:url(https://www.yamaha-motor.com.cn/sharedhp/img/rwd_identity.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.longxin{
+    background:url(https://www.loncinindustries.com/mobile/images/logo.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.chunfeng{
+    background:url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=94385197,3093911095&fm=26&gp=0.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.haojue{
+    background:url(https://www.haojue.com/bocweb//web/img/logo.png?v=v14);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.lifan{
+    background:url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=694157445,1608882500&fm=26&gp=0.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.fonz{
+    background:url(https://assets-global.website-files.com/5d23f1c570f33476f4a23d3d/6018aeb09bd8f616f35ddaa3_FONZ%20logo%20horizontal.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.aaa{
+    position: fixed;
+}
+
+.aaa ul { /*一级菜单样式*/
+    list-style-type: none;
+    height: 70px;
+    margin: 70px;
+    width: 100%;
+    overflow: hidden;
+    background-color:white;
+}
+
+.aaa li{ /*一级菜单向左浮动*/
+    float: left;
+}
+
+.aaa li a, .dropbtn { /*一级菜单字体*/
+    display:inline-block;
+    color: black;
+    text-align:left;
+    padding: 8px 28px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+.aaa .dropdown { /*二级菜单转为块元素*/
+    display:inline-block;
+}
+
+.aaa .dropdown-content { /*二级菜单内容样式*/
+    top: 140px;
+    display:none;
+    position: absolute;
+    background-color:white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.aaa .dropdown-content a { /*二级菜单a链接样式*/
+    top: 20px;
+    margin-top:0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    height: 18px;
+}
+
+.aaa .dropdown-content a:hover { /*鼠标指向二级菜单效果颜色*/
+    background-color: #f1f1f1;
+}
+
+.aaa .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#footer { /*页尾*/
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:0px; 
+    height: 30px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 27px;
+    font-family: "Electrotome\ Bold\ Oblique";    
+}
