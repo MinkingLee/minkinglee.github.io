@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>travel index</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="./Js/search.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Index.html" class="logo">MotorCycle</a>
+        <ul class="nav">
+            <li><a href="Index.html#about">About</a></li>
+            <li><a href="Index.html#travel">Travel</a></li>
+            <li><a href="Brand.html">Brand</a></li>
+        </ul>
+        <div class="search-box">
+            <form onsubmit="return search()"> <!--onsubmit 属性在表单提交时触发-->
+                <input type=text class="search_txt" placeholder="Search your route" autocomplete="off" autofocus id="search_input">
+                <button class="search_btn" onclick="return search()"><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="nav-item">
+            <a href="Index.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
+            <a href="#" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+</body>

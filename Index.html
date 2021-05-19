@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>smooth scroll test</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="./Js/search.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home" class="logo">MotorCycle</a>
+        <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="Brand.html">Brand</a></li>
+        </ul>
+        <div class="search-box">
+            <form onsubmit="return search()"> <!--onsubmit 属性在表单提交时触发-->
+                <input type=text class="search_txt" placeholder="Search your route" autocomplete="off" autofocus id="search_input">
+                <button class="search_btn" onclick="return search()"><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+            </form>
+        </div>        
+        <div class="nav-item">
+            <a href="Index.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
+            <a href="#" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
+        </div>
+    </div>
+    <div class="banner-area" id="home">
+        <h2>Enjoy Yours</h2>
+    </div>
+    <div class="about-area" id="about">
+        <div class="text-part">
+            <h1>History of the MotorCycle</h1>
+            <p><i class="fa fa-quote-left fa-2x fa-pull-left fa-border" aria-hidden="true"></i>The history of the motorcycle begins in the second half of the 19th century.<br>
+            Motorcycles are descended from the "safety bicycle," a bicycle with front and rear wheels of the same size and a pedal crank mechanism to drive the rear wheel.
+            Despite some early landmarks in its development, the motorcycle lacks a rigid pedigree that can be traced back to a single idea or machine. <br>
+            Instead, the idea seems to have occurred to numerous engineers and inventors around Europe at around the same time.</p>
+            <img class="about-img" src="image/1894_Hildebrand_&_Wolfmüller_diagram.png" alt="about-area-img">
+        </div>
+    </div>
+    <div class="travel-area" id="travel">
+        <div class="text-part">
+            <h1>Travel Routes</h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="image/d2_2_6.jpg" alt="">
+                <span>California State Route 1</span>
+            </div>
+
+            <div class="box">
+                <img src="image/v2-025b130b171c0398b2fe8fb9f29c213e_r.jpg" alt="">
+                <span>Great Ocean Road</span>
+            </div>
+
+            <div class="box">
+                <img src="image/b8f50fffd75e99913e970fa605d11163_r.jpg" alt="">
+                <span>Sichuan-Tibet Highway</span>
+            </div>
+
+            <div class="box">
+                <img src="image/wKgED1vWbYaAUqLmAAoM2auUzuQ73.jpeg" alt="">
+                <span>Route des Grandes Alps</span>
+            </div>
+        <button class="button button1" onclick="window.location.href='#about'">
+            <i class="fa fa-motorcycle fa-2x" aria-hidden="true"></i>
+        </button>
+        </div>
+    </div>
+    <h3>Designed by Lmx18002161</h3>
+</body>

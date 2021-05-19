@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTest</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="./Js/imgbox.js"></script>
+    <script type="text/javascript" src="./Js/search.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="Index.html" class="logo">MotorCycle</a>
+        <ul class="nav">
+            <li><a href="Index.html#about">About</a></li>
+            <li><a href="Index.html#travel">Travel</a></li>
+            <li><a href="Brand.html">Brand</a></li>
+        </ul>
+        <div class="search-box">
+            <form onsubmit="return search()"> <!--onsubmit 属性在表单提交时触发-->
+                <input type=text class="search_txt" placeholder="Search your route" autocomplete="off" autofocus id="search_input">
+                <button class="search_btn" onclick="return search()"><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="nav-item">
+            <a href="Brand.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
+            <a href="#" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
+        </div>        
+    </div>
+    <div class="aaa">
+        <ul>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">American</a></li>
+                <div class="dropdown-content">
+                    <a class="harley" href="https://www.harley-davidson.com/cn/zh/index.html"></a>
+                    <a class="indian" href="http://www.indianmotorcycle.cn/"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">European</a></li>
+                <div class="dropdown-content">
+                    <a class="bmw" href="https://www.bmw-motorrad.com.cn/zh/home.html#/filter-undefined"></a>
+                    <a class="ktm" href="https://www.ktm.com/zh-cn.html"></a>
+                    <a class="ducati" href="https://www.ducati.com/ww/en/home"></a>
+                    <a class="aprilia" href="https://www.aprilia.com/en_EN/"></a>
+                    <a class="triumph" href="https://www.triumphmotorcycles.cn/"></a>
+                    <a class="vespa" href="https://www.vespa.com/en_EN/"></a>
+                </div>
+            </div>
+            <div class="dropdown"> 
+                <li><a href="#" class="dropbtn">Japanese</a></li>
+                <div class="dropdown-content">
+                    <a class="honda" href="https://www.honda.com.cn/honda/motor.html"></a>
+                    <a class="kawasaki" href="https://www.kawasaki-motors.cn/zh-cn/"></a>
+                    <a class="suzuki" href="https://www.globalsuzuki.com/motorcycle/index.html"></a>
+                    <a class="yamaha" href="https://www.yamaha-motor.com.cn/mc/products/"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">Chinese</a></li>
+                <div class="dropdown-content">
+                    <a class="longxin" href="https://www.loncinindustries.com/motocycle/Index.aspx"></a>
+                    <a class="chunfeng" href="https://www.cfmoto.com/"></a>
+                    <a class="haojue" href="https://www.haojue.com"></a>
+                    <a class="lifan" href="http://motor.lifan.com/"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">Australian</a></li>
+                <div class="dropdown-content">
+                    <a class="fonz" href="https://www.fonzmoto.com/"></a>
+                </div>
+            </div>
+       </ul>
+    </div>
+    </div>
+
+    <div id="glide-content">
+        <div class="imgBox">
+            <img class="img-slide img1" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb.zol-img.com.cn%2Fsoft%2F5%2F405%2Fce9PWZDsttusQ.jpg&refer=http%3A%2F%2Fb.zol-img.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612604085&t=a9ae43ccec62568aa2d140dc98ad4fc3" alt="1">
+            <img class="img-slide img2" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2%2F51248c9860f7f.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612604126&t=37edfd1175b764e601d10af67bb78846" alt="2">
+            <img class="img-slide img3" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F5%2F57d666f9b8b55.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612604277&t=c118ecb0637c44758524712d6f93657e" alt="3">
+            <img class="img-slide img4" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.article.pchome.net%2F00%2F23%2F25%2F82%2Fpic_lib%2Fwm%2F1007.jpg&refer=http%3A%2F%2Fimg.article.pchome.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612604192&t=145f2a94e0eca7c610c0ee3d4f3649df" alt="4">
+        </div>
+    </div>
+    <div id="footer">
+    Designed by Lmx18002161
+    </div>
+</body>
+</html>
