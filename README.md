@@ -1,6 +1,9 @@
 # minkinglee.github.io
 My Graduation Project
 
-index.html
+#html part
+Index.html
 Brand.html
 Travel.html
+
+#css part
