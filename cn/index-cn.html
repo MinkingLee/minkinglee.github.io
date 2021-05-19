@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" /> 
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摩托俱乐部</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="../Js/search.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home" class="logo">MotorCycle</a>
+        <ul class="nav">
+            <li><a href="#about">关于</a></li>
+            <li><a href="#travel">旅行</a></li>
+            <li><a href="Brand-cn.html">品牌</a></li>
+        </ul>
+        <div class="search-box">
+            <form onsubmit="return search()"> <!--onsubmit 属性在表单提交时触发-->
+                <input type=text class="search_txt" placeholder="搜索你的路线" autocomplete="off" autofocus id="search_input">
+                <button class="search_btn" onclick="return search()"><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+            </form>
+        </div>        
+        <div class="nav-item">
+            <a href="../index.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
+            <a href="index-cn.html" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
+        </div>
+    </div>
+    <div class="banner-area" id="home">
+        <h2>享受你的摩托</h2>
+    </div>
+    <div class="about-area" id="about">
+        <div class="text-part">
+            <h1>摩托车历史</h1>
+            <p><i class="fa fa-quote-left fa-2x fa-pull-left fa-border" aria-hidden="true"></i>摩托车的历史始于19世纪下半叶。<br>
+            摩托车是从“安全自行车”派生而来的，“安全自行车”是具有相同大小的前轮和后轮以及驱动后轮的踏板曲柄机构的自行车。
+            尽管摩托车在发展过程中具有一些早期的标志性意义，但它仍然缺乏可以追溯到单个创意或机器的严格血统书。<br>
+            取而代之的是，这个想法似乎在大约同一时间出现在欧洲各地的众多工程师和发明家身上。</p>
+            <img class="about-img" src="image/1894_Hildebrand_&_Wolfmüller_diagram.png" alt="about-area-img">
+        </div>
+    </div>
+    <div class="travel-area" id="travel">
+        <div class="text-part">
+            <h1>旅行路线</h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="image/d2_2_6.jpg" alt="">
+                <span>加州1号公路</span>
+            </div>
+
+            <div class="box">
+                <img src="image/v2-025b130b171c0398b2fe8fb9f29c213e_r.jpg" alt="">
+                <span>澳洲大洋路</span>
+            </div>
+
+            <div class="box">
+                <img src="image/b8f50fffd75e99913e970fa605d11163_r.jpg" alt="">
+                <span>川藏线</span>
+            </div>
+
+            <div class="box">
+                <img src="image/wKgED1vWbYaAUqLmAAoM2auUzuQ73.jpeg" alt="">
+                <span>法国阿尔卑斯大道</span>
+            </div>
+        <button class="button button1" onclick="window.location.href='#about'">
+            <i class="fa fa-motorcycle fa-2x" aria-hidden="true"></i>
+        </button>
+        </div>
+    </div>
+    <h3>设计来源 Lmx18002161</h3>
+</body>

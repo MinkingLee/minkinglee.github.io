@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" /> 
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摩托俱乐部</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="./Js/imgbox.js"></script>
+    <script type="text/javascript" src="./Js/search.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index-cn.html" class="logo">MotorCycle</a>
+        <ul class="nav">
+            <li><a href="index-cn.html#about">关于</a></li>
+            <li><a href="index-cn.html#travel">旅行</a></li>
+            <li><a href="Brand-cn.html">品牌</a></li>
+        </ul>
+        <div class="search-box">
+            <form onsubmit="return search()"> <!--onsubmit 属性在表单提交时触发-->
+                <input type=text class="search_txt" placeholder="搜索你的路线" autocomplete="off" autofocus id="search_input">
+                <button class="search_btn" onclick="return search()"><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="nav-item">
+            <a href="../Brand.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
+            <a href="Brand-cn.html" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
+        </div>        
+    </div>
+    <div class="aaa">
+        <ul>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">美系车</a></li>
+                <div class="dropdown-content">
+                    <a class="harley" href="https://www.harley-davidson.com/cn/zh/index.html"></a>
+                    <a class="indian" href="http://www.indianmotorcycle.cn/"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">欧系车</a></li>
+                <div class="dropdown-content">
+                    <a class="bmw" href="https://www.bmw-motorrad.com.cn/zh/home.html#/filter-undefined"></a>
+                    <a class="ktm" href="https://www.ktm.com/zh-cn.html"></a>
+                    <a class="ducati" href="https://www.ducati.com/ww/en/home"></a>
+                    <a class="aprilia" href="https://www.aprilia.com/en_EN/"></a>
+                    <a class="triumph" href="https://www.triumphmotorcycles.cn/"></a>
+                    <a class="vespa" href="https://www.vespa.com/en_EN/"></a>
+                </div>
+            </div>
+            <div class="dropdown"> 
+                <li><a href="#" class="dropbtn">日系车</a></li>
+                <div class="dropdown-content">
+                    <a class="honda" href="https://www.honda.com.cn/honda/motor.html"></a>
+                    <a class="kawasaki" href="https://www.kawasaki-motors.cn/zh-cn/"></a>
+                    <a class="suzuki" href="https://www.globalsuzuki.com/motorcycle/index.html"></a>
+                    <a class="yamaha" href="https://www.yamaha-motor.com.cn/mc/products/"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">国产车</a></li>
+                <div class="dropdown-content">
+                    <a class="longxin" href="https://www.loncinindustries.com/motocycle/Index.aspx"></a>
+                    <a class="chunfeng" href="https://www.cfmoto.com/"></a>
+                    <a class="haojue" href="https://www.haojue.com"></a>
+                    <a class="lifan" href="http://motor.lifan.com/"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#" class="dropbtn">澳产车</a></li>
+                <div class="dropdown-content">
+                    <a class="fonz" href="https://www.fonzmoto.com/"></a>
+                </div>
+            </div>
+       </ul>
+    </div>
+    </div>
+
+    <div id="glide-content">
+        <div class="imgBox">
+            <img class="img-slide img1" src="./image/1.jpeg" alt="1">
+            <img class="img-slide img2" src="./image/2.jpeg" alt="2">
+            <img class="img-slide img3" src="./image/3.jpeg" alt="3">
+            <img class="img-slide img4" src="./image/4.jpeg" alt="4">
+        </div>
+    </div>
+    <div id="footer">
+    设计来源 Lmx18002161
+    </div>
+</body>
+</html>
