@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript" src="./Js/search.js"></script>
+    
 </head>
 <body>
+    
     <div class="navbar">
         <a href="index.html" class="logo">MotorCycle</a>
         <ul class="nav">
@@ -25,17 +27,58 @@
             </form>
         </div>
         <div class="nav-item">
-            <a href="index.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
-            <a href="./cn/index-cn.html" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
+            <a href="./Travel.html" class="language" rel="en-En"><img src="image/gb.gif" class="flag" alt="English"></a>
+            <a href="./cn/Travel-cn.html" class="language" rel="cn-Cn"><img src="image/cn.gif" class="flag" alt="Chinese"></a>
         </div>
     </div>
 
-
-
-
-
-
-
-
+    <div class="video-bg"> <!--vedio background-->
+        <video autoplay="autoplay" loop="loop" muted="muted" > <!--controls="controls" 控制-->
+        <source src="./Long Way Up — Official Trailer Apple TV+ (online-video-cutter.com).mp4" type="video/mp4">
+        </video>
     
+    <h2>START<br>Your Adventure</h2>
+    <a href="#steps">
+        <i class="fa fa-square-o fa-5x" aria-hidden="true" style="position: absolute; top: 77.8%; left: 49.3%; color: #817745;"></i>
+        <i class="fa fa-arrow-down fa-3x" aria-hidden="true" style="position: absolute; top: 80%; left: 50%; color:#f4983c;"></i></a>
+    </div>
+
+    <div class="two-steps">
+        <img id="steps" src="./image/how-to-background.png">
+        <h4 class="section-site" >Two Easy Steps</h4>
+        <div class="item">
+            <figure>
+                <img src="./image/CheckList.png">
+            </figure>
+                <h5>Step 1</h5>
+                <h6>What do you need?</h6>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="./image/Map.png">
+            </figure>
+                <h5>Step 2</h5>
+                <h6>Where do you want it?</h6>
+        </div>
+    </div>
+
+    <div class="route-content">
+        <span><input type='button' value='The South Route of the Sichuan-Tibet highway' onclick='run();' /></span>
+        <div style="width:115vh;height:65vh;border:1vh solid #282433;float:right;" id="container2"></div>
+        <h6 style="margin:0;padding-left: 1em;line-height: 2em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Southern Route along the G318 National Highway to Tibet<br>
+            starts in Chengdu, the capital of Sichuan Province, and heads almost
+            due west,through Ya’an and Luding, before climbing slightly to reach
+            Kangding and the amazing village of Xinduqiao,the highlight spot for
+            photographers. From there is heads on east, continuously climbing
+            higher and higher as it passes through Litang to enter Tibet at Markam.
+            As you pass through Nyingchi Prefecture, the route takes you through
+            Bangda, Basu, and Bomi,before hitting Nyingchi City, then continuing
+            through Gongbo’gyamda County and the Basum Tso, before finally reaching Lhasa.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The altitude changes along the Southern Route of the Sichuan Tibet Highway to Lhasa are huge in some places, and small in others, depending on where you are along the road. Starting from Chengdu at around 500 meters above sea level, the road starts to climb soon after leaving Ya’an to the west of Chengdu, and by the time it reaches the Erlangshan Tunnel, it is already more than 2,000 meters above sea level. The boundary between the mountain area of Sichuan and the Qinghai Tibet Plateau is at the Mount Zheduoshan Pass, which sits at 4,298 meters, and is the highest point in the lower end of the route. At Xinduqiao the altitude reaches around 3,300 meters, but by the time you reach Nyingchi, you have already dropped again to 3,100 meters. This up and down altitude ranges along the entire length of the route, until you reach Lhasa at 3,656 meters.
+        </h6>
+    </div>
+
 </body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=CgcKrMVRp6lkCAf33Nkz6VXvGT29iaD6"></script>
+<script type="text/javascript" src="./Js/map.js"></script>
