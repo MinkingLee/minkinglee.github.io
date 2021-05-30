@@ -1,4 +1,4 @@
-/*Test-style-begin*/
+/*Index-style-begin*/
 
 body{
     margin: auto;
@@ -60,6 +60,11 @@ a{
 
 a:hover{
     color: #000000;
+}
+
+.search-box input{
+    outline-style: none ;
+    border-radius: 1vh;
 }
 
 .banner-area{
@@ -135,6 +140,31 @@ h3{
     font-family: "Electrotome\ Bold\ Oblique";
 }
 
+h4{
+    position: relative;
+    text-align: center;
+    font-size: 9vh;
+    margin-top: 7vh;
+    margin-bottom: 0;
+    color: #f4983c;
+    font-family:"ALBED___";
+}
+
+h5{
+    font-size: 5vh;
+    font-family: "RHINO___";
+    padding: 0;
+    margin: 0;
+    line-height: 0.2vh;
+    color: #817745;
+}
+
+h6{
+    font-size: 3vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
 p{
     position: absolute;/*绝对位置*/
     font-size: 3.3vh;
@@ -143,7 +173,7 @@ p{
 }
 
 .travel-area{
-    background: #302f2f;
+    background: #282433;
     color: #fff;
 }
 
@@ -232,9 +262,9 @@ html{
     scroll-behavior: smooth; /*滑动样式*/
 }
 
-/*Test-style-end*/
+/*Index-style-end*/
 
-/*WebTest-imgbox-begin*/
+/*Brand-imgbox-begin*/
 
 /*图片轮播样式*/
 .imgBox{
@@ -267,9 +297,9 @@ html{
     display: none;
 }
 
-/*WebTest-imgbox-end*/
+/*Brand-imgbox-end*/
 
-/*WebTest-style*/
+/*Brand-style-begin*/
 
 /*加载图片到二级菜单*/
 .indian{
@@ -398,7 +428,7 @@ html{
     height: 70px;
     margin: 70px;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /*隐藏*/
     background-color:white;
 }
 
@@ -460,3 +490,56 @@ html{
     font-size: 27px;
     font-family: "Electrotome\ Bold\ Oblique";    
 }
+
+/*Brand-style-end*/
+
+/*Travel-style-Begin*/
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;/*默认，不保证保持原有的比例，内容拉伸填充整个内容容器*/
+}
+
+.two-steps > img{
+    top: 120vh;
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.item{
+    float: left;
+    text-align: center;
+    width: 50%;
+    margin-left: 26.5vw;
+    height: auto;
+    margin-top:0;
+}
+
+.route-content{
+    clear: both;/*在左右两侧均不允许浮动元素*/
+    background-color: #282433;
+    z-index: -1;
+    margin: 0;
+    color: white;
+}
+
+.route-content > span{
+    margin-left: 1vh;
+    border: #282433;
+    line-height: 20vh;
+}
+
+.route-content input{
+    border-radius: 2vh;
+    padding: 2vh;
+    font-size: 2rem;
+    font-family: "Electrotome\ Bold\ Oblique";
+    background-color: #f4983c;
+    color: white;
+}
+/*Travel-Style-End*/
