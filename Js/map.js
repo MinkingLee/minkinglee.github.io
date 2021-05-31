@@ -1,6 +1,6 @@
 var map = new BMap.Map("container2");
 map.centerAndZoom(new BMap.Point(113.330979,22.815475), 15);
-map.enableScrollWheelZoom();//设置鼠标滚动缩放百度地图
+map.enableScrollWheelZoom();        //设置鼠标滚动缩放百度地图
 var myP1 = new BMap.Point(104.063684,30.663607); 
 //起点-成都
 var myP2 = new BMap.Point(100.247688,29.989647);    
